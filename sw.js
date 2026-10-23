@@ -1,6 +1,6 @@
 // Service worker: lưu giao diện app để mở được cả khi mất mạng.
 // Nhạc Jamendo/Spotify luôn lấy trực tiếp từ mạng; nhạc trên máy nằm trong IndexedDB.
-const CACHE = "nghenhac-v2";
+const CACHE = "nghenhac-v3";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {

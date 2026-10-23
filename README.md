@@ -8,6 +8,7 @@ Web app cài được ra màn hình chính iPhone giống app thật. Không c�
 |---|---|
 | **Khám phá** | Một ô tìm kiếm chung cho 4 nguồn mở, hợp pháp, kết quả hiện ngay trong app (xem bảng dưới) |
 | **Thư viện** | Thêm file MP3/M4A từ iPhone; tạo danh sách phát (vd “Nhạc Việt chill”), *Bài hát đã thích*, trộn bài |
+| **YouTube** | Video nhạc thịnh hành ở Việt Nam, tìm kiếm, tự phát video tiếp theo, lưu video yêu thích |
 | **Spotify** | Dán link playlist/album/nghệ sĩ Spotify (vd các playlist nhạc Việt) để xem và nghe ngay trong app |
 | **Cài đặt** | Nhập Jamendo Client ID, xem dung lượng đã dùng |
 
@@ -25,6 +26,19 @@ Thêm nữa: **phát nền khi khoá màn hình**, điều khiển ở màn hìn
 - Chọn **Tất cả** để tìm cùng lúc ở mọi nguồn; mỗi nguồn hiện một nhóm kết quả, bấm **Xem tất cả** để xem hết.
 - Radio là luồng trực tiếp nên không tua được. Một số đài chỉ phát qua `http` sẽ không phát được trên trang `https` — app báo lỗi, bạn chọn đài khác.
 - Kết quả Internet Archive là album: bấm vào để mở danh sách bài rồi phát.
+
+## Tab YouTube
+
+Dùng trình phát chính thức của YouTube, nên có gần như mọi bài Việt đại chúng.
+
+- **Cần khoá YouTube API miễn phí** (khoảng 100 lượt tìm kiếm/ngày; xem thịnh hành và phát video gần như không tốn lượt):
+  1. Mở https://console.cloud.google.com, đăng nhập Google, tạo Project mới (vd `NgheNhac`).
+  2. **APIs & Services → Library** → tìm **YouTube Data API v3** → **Enable**.
+  3. **Credentials → Create credentials → API key** → sao chép khoá.
+  4. Bấm vào khoá: **Application restrictions → Websites** → thêm `https://nguyenhuyhiep-20130258.github.io/*`; **API restrictions** → chọn YouTube Data API v3 → **Save**. (Giới hạn này để người khác không dùng trộm khoá của bạn.)
+  5. Trong app: **Cài đặt → Khoá YouTube API** → dán → **Lưu và kiểm tra**.
+- Bật **Tự phát tiếp** để hết video là app phát video kế tiếp trong danh sách.
+- Giới hạn của YouTube: có quảng cáo như trên YouTube, và **chỉ phát khi tab YouTube đang mở trên màn hình** (khoá máy hoặc chuyển tab là dừng). Muốn nghe nền, dùng Radio, Audius, Jamendo, Archive hoặc nhạc trên máy.
 
 ## Về nhạc Việt “giống Spotify”
 
