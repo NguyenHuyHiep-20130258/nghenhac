@@ -6,12 +6,25 @@ Web app cài được ra màn hình chính iPhone giống app thật. Không c�
 
 | Tab | Dùng để |
 |---|---|
-| **Khám phá** | Nghe nhạc miễn phí, hợp pháp từ Jamendo: thịnh hành, tìm kiếm, thể loại (có mục *Việt Nam*) |
+| **Khám phá** | Một ô tìm kiếm chung cho 4 nguồn mở, hợp pháp, kết quả hiện ngay trong app (xem bảng dưới) |
 | **Thư viện** | Thêm file MP3/M4A từ iPhone; tạo danh sách phát (vd “Nhạc Việt chill”), *Bài hát đã thích*, trộn bài |
 | **Spotify** | Dán link playlist/album/nghệ sĩ Spotify (vd các playlist nhạc Việt) để xem và nghe ngay trong app |
 | **Cài đặt** | Nhập Jamendo Client ID, xem dung lượng đã dùng |
 
 Thêm nữa: **phát nền khi khoá màn hình**, điều khiển ở màn hình khoá / Control Center / tai nghe, màn hình “Đang phát” có tua bài, lặp lại, trộn bài, danh sách chờ, phát tiếp theo. Ảnh bìa và tên bài tự đọc từ file MP3.
+
+## Nguồn nhạc trong tab Khám phá
+
+| Nguồn | Có gì | Cần khoá? |
+|---|---|---|
+| **Radio Việt Nam** ([Radio Browser](https://www.radio-browser.info)) | Đài phát thanh trực tiếp của Việt Nam và thế giới, tìm theo tên đài | Không |
+| **[Audius](https://audius.co)** | Nhạc do chính nghệ sĩ đăng, bài thịnh hành và tìm kiếm | Không |
+| **[Jamendo](https://www.jamendo.com)** | Nhạc độc lập giấy phép Creative Commons | Client ID miễn phí |
+| **[Internet Archive](https://archive.org)** | Album, bản thu trực tiếp, đĩa than cũ; app chỉ lấy nhạc giấy phép tự do / phạm vi công cộng | Không |
+
+- Chọn **Tất cả** để tìm cùng lúc ở mọi nguồn; mỗi nguồn hiện một nhóm kết quả, bấm **Xem tất cả** để xem hết.
+- Radio là luồng trực tiếp nên không tua được. Một số đài chỉ phát qua `http` sẽ không phát được trên trang `https` — app báo lỗi, bạn chọn đài khác.
+- Kết quả Internet Archive là album: bấm vào để mở danh sách bài rồi phát.
 
 ## Về nhạc Việt “giống Spotify”
 
@@ -23,7 +36,7 @@ Spotify, Zing MP3, NhacCuaTui… **không cho phép** app khác phát trực ti�
    - Lấy link: trong app Spotify mở playlist → **⋯** → **Chia sẻ** → **Sao chép liên kết** → dán vào tab Spotify.
 2. **Thư viện (nhạc trên máy)** – thêm các file nhạc Việt bạn có (nhạc đã mua, file trong iCloud Drive/Tệp). Phần này **nghe nền, nghe offline** và có đủ tính năng danh sách phát như Spotify.
 
-## Bước 1 — Lấy Jamendo Client ID (miễn phí, 2 phút)
+## Bước 1 — Lấy Jamendo Client ID (không bắt buộc, 2 phút)
 
 1. Vào https://devportal.jamendo.com → **Sign up** và đăng nhập.
 2. Chọn **My Applications** → **Create a new app**. Tên tuỳ ý (vd `NgheNhac`), website có thể điền địa chỉ trang của bạn ở bước 2.
